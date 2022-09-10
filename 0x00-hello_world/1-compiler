@@ -1,5 +1,5 @@
 #!/bin/bash
 gcc E- $CFILE -c
-
-
-
+:%s/^\s*$\n//gc
+:%s/^\s*$\n//gc
+:%s/^\s*$\n//gc
