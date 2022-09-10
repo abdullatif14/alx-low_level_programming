@@ -1,8 +1,6 @@
-#!/bin/bash
-int main()
+#include <studio.h> 
+int main(void)
 {
-       	char name[] = "Programming is like building a multilingual puzzle" ;
-       	puts(name);
-       	return 0
+		puts("\"Programming is like building a multilingual puzzle");
+			return (0);
 }
-		
