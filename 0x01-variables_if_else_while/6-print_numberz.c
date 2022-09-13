@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * Main: Enter function(x): Print numbers from 0-9
+ * Main: Enter function(x)
  * Description: print all numbers of base10
- * Return sucess(0)
+ * Return: sucess(0)
  */
 
 int main(void)
@@ -12,7 +12,9 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 10; i++)
-		putchar("%d", i);
+	{
+		putchar(i + 0);
+	}
 	putchar("\n");
 	return (0);
 }
