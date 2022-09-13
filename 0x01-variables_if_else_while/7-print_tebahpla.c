@@ -1,21 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
- /**
-  * main - enter function
-  * Description: print letters in reverse
-  * Return : 0
-  */
+
+/**
+ *
+ *  * main - Entry point
+ *
+ *   *
+ *
+ *    * Return: Always 0 (Success)
+ *
+ *     */
 
 int main(void)
+
 {
-	char x;
 
-	for (x = 'z'; x >= 'a'; a--)
-	{
-		putchar(a);
-	}
+		char alpha;
 
-	putchar('\n');
 
-	return (0);
+
+			for (alpha = 'z' ; alpha >= 'a' ; alpha--)
+
+						putchar(alpha);
+
+				putchar('\n');
+
+					return (0);
+
 }
