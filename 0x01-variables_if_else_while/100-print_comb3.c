@@ -1,61 +1,79 @@
-nclude <stdio.h>
+#include <stdio.h>
 
-#include <unistd.h>
+
 
 /**
  *
- *  * main - Entyr point
+ *  * main - print double digit combos
  *
- *   * Description: prints two digits combination
+ *   *
  *
- *    * Return: Always 0 (success)
+ *    * Description: print double digit combos
  *
- *     */
+ *     *
+ *
+ *      * Return: Always 0 (Success)
+ *
+ *       */
+
+
 
 int main(void)
 
 {
 
-		int c, i;
+		int i, j;
 
 
 
-			for (c = '0'; c <= '9'; c++)
+			i = 48;
 
-					{
-
-								for (i = '0'; i <= '9'; i++)
-
-											{
-
-															if (c < i)
-
-																			{
-
-																								putchar(c);
-
-																												putchar(i);
+				j = 48;
 
 
 
-																																if (c != '8' || (c == '8' && i != '9'))
+					while (i < 58)
 
-																																					{
+							{
 
-																																											putchar(',');
+										j = i + 1;
 
-																																																putchar(' ');
+												while (j < 58)
 
-																																																				}
+															{
 
-																																			}
+																			putchar(i);
 
-																	}
+																						putchar(j);
 
-									}
 
-				putchar('\n');
 
-					return (0);
+																									if (i < 56 || j < 57)
+
+																													{
+
+																																		putchar(44);
+
+																																						putchar(32);
+
+																																									}
+
+																												j++;
+
+																														}
+
+
+
+														i++;
+
+															}
+
+
+
+						putchar(10);
+
+
+
+							return (0);
 
 }
