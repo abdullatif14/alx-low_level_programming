@@ -3,10 +3,10 @@
 #include <time.h>
 
 /**
- *main entry 
- *Description:A script that prints letters in both lowercase and uppercase
- *Return (0) success
- */
+*main entry 
+*Description:A script that prints letters in both lowercase and uppercase
+*Return (0) success
+*/
 int main(void)
 {
 	char letter;
