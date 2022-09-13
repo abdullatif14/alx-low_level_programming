@@ -1,22 +1,35 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 #include <unistd.h>
 
 /**
- * Main: Enter function(x)
- * Description: print all numbers of base10
- * Return: sucess(0)
- */
+ *
+ *  * main - Entry point
+ *
+ *   * Description: prints char below 10
+ *
+ *    * Return: Always 0 (success)
+ *
+ *     */
 
 int main(void)
+
 {
-	int i;
 
-	for (i = 0; i < 10; i++)
-	{
-		putchar(i +' 0');
-	}
-	putchar("\n");
+		int a;
 
-	return (0);
+
+
+			for (a = 0; a < 10; a++)
+
+					{
+
+								putchar(a + '0');
+
+									}
+
+				putchar('\n');
+
+					return (0);
+
 }
