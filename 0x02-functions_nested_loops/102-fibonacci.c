@@ -18,7 +18,7 @@ int main(void)
 		n2 = n3;
 
 		if (i == 49)
-			printf('\n');
+			printf("\n");
 		else
 			printf(", ");
 	}
