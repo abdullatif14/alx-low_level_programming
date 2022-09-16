@@ -10,7 +10,7 @@ int main(void)
 
 	unsigned long n1 = 0, n2 = 1, n3;
 
-	for (inc = 0; inc < 50; inc++)
+	for (i = 0; i < 50; i++)
 	{
 		n3 = n1 + n2;
 		printf("%lu", n3);
