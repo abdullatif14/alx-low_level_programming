@@ -20,16 +20,8 @@ int factorial(int n)
 	{
 		return (1);
 	}
-
-	int main(void)
-	/**
-	 *  main - checking the factorial
-	 */
+	else
 	{
-		int f;
-
-		f = factorial(0);
-		printf("0! = %d/n", f);
-		return (0);
+		return (n * factorial(n - 1));
 	}
 }
