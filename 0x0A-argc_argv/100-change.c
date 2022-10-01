@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 	if (isInteger(argv[1]))
 
