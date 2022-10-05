@@ -29,36 +29,30 @@ int isInteger(const char *s)
 
 int main(int argc, char const *argv[])
 {
-	int i = 0, coinUsed = 0, coin = 0;
-	int coins[] = {25, 10, 5, 2, 1};
+	int cents, ncoins = 0;
 
-	if (argc != 2)
-
+	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (isInteger(argv[1]))
 
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		i = atoi(argv[1]);
-		while (i > 0 && coin <= 4)
-		{
-
-			if (i >= coins[coin]
-
-			{
-				i -= coins[coin];
-				coinUsed++;
-			}
-			else
-			{
-				coin++;
-			}
-		}
+		if (cents >= 25)
+			cents -= 25;
+		else if (cents >= 10)
+			cents -= 10;
+		else if (cents >= 5)
+			cents -= 5;
+		else if (cents >= 2)
+			cents -= 2;
+		else if (cents >= 1)
+			cents -= 1;
+		ncoins += 1;
 	}
-
-	printf("%d\n", coinUsed);
-
+	printf("%d\n", ncoins);
 	return (0);
 }
