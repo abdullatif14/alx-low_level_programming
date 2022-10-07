@@ -3,14 +3,14 @@
 
 /**
  * malloc_checked - allocates the memory
- * @b: unsigned int
+ * @b: number of bytes
  *
- * Return: pointer to the alllocated memory
+ * Return: pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
 {
-	char b;
+	char *p;
 
 	p = malloc(b);
 	if (p == NULL)
